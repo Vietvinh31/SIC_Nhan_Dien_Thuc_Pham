@@ -1,0 +1,24 @@
+# Datasets and downloaded archives (not needed for inference)
+datasets/
+
+# Training artifacts, reports, and local backups
+backups/
+reports/
+models/*
+!models/yolo_food/
+models/yolo_food/*
+!models/yolo_food/best.pt
+
+# Checkpoints, except the single checkpoint used by the public demo
+*.pt
+!models/yolo_food/best.pt
+
+# Local Python and editor artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.cache
+*.crdownload
+.streamlit/secrets.toml
